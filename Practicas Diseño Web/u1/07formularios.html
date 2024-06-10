@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <header>
+        <h2>Formularios HTML</h2>
+    </header>
+
+    <main>
+        <div>
+            <h1>¿Dudas y Consultas?: Envía tu mensaje Aquí</h1>
+            <p>¡Estudiantes apasionados! Queremos ser parte de tu viaje universitario. Comparte tus preguntas y sueños con nosotros. Cada inquietud es un paso hacia el conocimiento, y cada sueño es una luz a nuestro camino. ¡Envíanos un mensaje!. Estamos emocionados de ser parte de tu viaje académico y construir un futuro lleno de aprendizaje y experiencias inolvidables.</p>
+        </div>
+
+        <br>
+
+        <div>
+            <form action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" placeholder="Ingresa tu nombre" required> <br><br>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" name="telefono" placeholder="Teléfono USA" pattern="\d{3}[\-]\d{3}[\-]\d{4}"> <br><br>
+
+                <label for="op">Tipo:</label>
+                <input list="opciones">
+                <datalist id="opciones">
+                    <option value="Estudiante">Estudiante</option>
+                    <option value="Empleado">Empleado</option>
+                    <option value="Egresado">Egresado</option>
+                    <option value="Aspirante">Aspirante</option>
+
+                </datalist> <br> <br>
+                
+                <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Mensaje:"></textarea> <br> <br>
+
+                <input type="submit" name="" value="Enviar">
+                
+
+
+            </form>
+
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
